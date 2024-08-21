@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 1600px;
+  height: 75px;
+  background-color: #222222;
+}/*# sourceMappingURL=style.css.map */
