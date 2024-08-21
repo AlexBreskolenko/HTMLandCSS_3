@@ -55,4 +55,16 @@ body {
 }
 .header__icon:hover path {
   fill: #f16d7f;
+}
+
+.main {
+  height: 148px;
+  background-color: #f8f3f4;
+}
+.main__section-one h2 {
+  color: #f16d7f;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Lato-Regular";
+  padding-top: 59px;
 }/*# sourceMappingURL=style.css.map */

@@ -58,3 +58,15 @@ body {
     fill: $colorPink;
   }
 }
+
+.main {
+  height: 148px;
+  background-color: #f8f3f4;
+  &__section-one h2 {
+    color: $colorPink;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: $fontRegular;
+    padding-top: 59px;
+  }
+}
