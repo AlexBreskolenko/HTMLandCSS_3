@@ -70,3 +70,37 @@ body {
     padding-top: 59px;
   }
 }
+
+.footer {
+  background-color: #222224;
+  display: flex;
+  align-items: center;
+  height: 79px;
+
+  .box-icon {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__section p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fbfbfb;
+    font-family: $fontRegular;
+  }
+  &__icon:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
+  &__icon:hover path {
+    fill: $colorPink;
+  }
+  &__icon:hover .path-two {
+    fill: white;
+  }
+}

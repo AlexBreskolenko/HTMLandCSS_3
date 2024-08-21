@@ -67,4 +67,36 @@ body {
   font-size: 24px;
   font-family: "Lato-Regular";
   padding-top: 59px;
+}
+
+.footer {
+  background-color: #222224;
+  display: flex;
+  align-items: center;
+  height: 79px;
+}
+.footer .box-icon {
+  display: flex;
+  gap: 8px;
+}
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__section p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
+  font-family: "Lato-Regular";
+}
+.footer__icon:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+.footer__icon:hover path {
+  fill: #f16d7f;
+}
+.footer__icon:hover .path-two {
+  fill: white;
 }/*# sourceMappingURL=style.css.map */
