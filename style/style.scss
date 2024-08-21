@@ -4,8 +4,57 @@
   box-sizing: border-box;
 }
 
-header{
-    max-width: 1600px;
-    height: 75px;
-    background-color: #222222;
+@import "vars";
+
+.container {
+  width: $widthContainer;
+  margin: 0 auto;
+}
+
+body {
+  max-width: $bodyWidth;
+  margin: 0 auto;
+}
+
+.header {
+  height: 75px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .box-left {
+    display: flex;
+    align-items: end;
+    gap: 41px;
+  }
+  .box-right {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    align-items: end;
+  }
+  .icon-number {
+    position: absolute;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: $fontRegular;
+    background-color: $colorPink;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 50px;
+    top: 0;
+    right: -10px;
+  }
+  &__icon:hover {
+    transition: transform 0.4s;
+    transform: scale(1.2);
+  }
+  &__icon:hover path {
+    fill: $colorPink;
+  }
 }
