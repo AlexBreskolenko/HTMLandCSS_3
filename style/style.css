@@ -57,9 +57,9 @@ body {
   fill: #f16d7f;
 }
 
-.main {
-  height: 148px;
+.main__section-one {
   background-color: #f8f3f4;
+  height: 148px;
 }
 .main__section-one h2 {
   color: #f16d7f;
@@ -67,6 +67,74 @@ body {
   font-size: 24px;
   font-family: "Lato-Regular";
   padding-top: 59px;
+}
+.main__section-three {
+  height: 448px;
+}
+.main .section-three__content {
+  display: flex;
+  justify-content: space-between;
+}
+.main .section-three__content .box-one {
+  max-width: 360px;
+  margin-top: 97px;
+}
+.main .section-three__content .box-one img {
+  display: block;
+  margin: 0 auto;
+}
+.main .section-three__content .box-one p {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Lato-Italic";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #222224;
+}
+.main .section-three__content .box-two {
+  max-width: 356px;
+  margin-top: 155px;
+}
+.main .section-three__content .box-two h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #222224;
+  font-family: "Lato-Bold";
+}
+.main .section-three__content .box-two h3 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #222224;
+  font-family: "Lato-Regular";
+  margin-bottom: 27px;
+}
+.main .section-three__content form {
+  display: flex;
+}
+.main .section-three__content button {
+  background-color: #f16d7f;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  font-family: "Lato-Regular";
+  width: 100px;
+  height: 49px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+.main .section-three__content input {
+  background-color: #e1e1e1;
+  border: none;
+  width: 322px;
+  padding-left: 22px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .footer {

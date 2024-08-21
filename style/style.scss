@@ -60,14 +60,84 @@ body {
 }
 
 .main {
-  height: 148px;
-  background-color: #f8f3f4;
+  &__section-one {
+    background-color: #f8f3f4;
+    height: 148px;
+  }
   &__section-one h2 {
     color: $colorPink;
     font-weight: 400;
     font-size: 24px;
     font-family: $fontRegular;
     padding-top: 59px;
+  }
+  &__section-three {
+    height: 448px;
+  }
+  .section-three__content {
+    display: flex;
+    justify-content: space-between;
+    .box-one {
+      max-width: 360px;
+      margin-top: 97px;
+    }
+    .box-one img {
+      display: block;
+      margin: 0 auto;
+    }
+    .box-one p {
+      margin-top: 30px;
+      text-align: center;
+      font-family: $fontItalic;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: #222224;
+    }
+    .box-two {
+      max-width: 356px;
+      margin-top: 155px;
+    }
+    .box-two h2 {
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      color: #222224;
+      font-family: $fontBold;
+    }
+    .box-two h3 {
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: #222224;
+      font-family: $fontRegular;
+      margin-bottom: 27px;
+    }
+    form {
+      display: flex;
+    }
+    button {
+      background-color: $colorPink;
+      border: none;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      font-family: $fontRegular;
+      width: 100px;
+      height: 49px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      cursor: pointer;
+    }
+    input {
+      background-color: #e1e1e1;
+      border: none;
+      width: 322px;
+      padding-left: 22px;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
   }
 }
 
