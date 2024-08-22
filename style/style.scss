@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 @import "vars";
 
 .container {
@@ -70,6 +74,162 @@ body {
     font-size: 24px;
     font-family: $fontRegular;
     padding-top: 59px;
+  }
+  &__section-two {
+    display: flex;
+    justify-content: space-between;
+    .left-part {
+      margin-top: 96px;
+    }
+
+    .card {
+      display: flex;
+      position: relative;
+      margin-bottom: 40px;
+      box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+      width: 652px;
+      height: 306px;
+    }
+    .icon-card {
+      position: absolute;
+      top: 28px;
+      right: 22px;
+      cursor: pointer;
+    }
+    .card-content {
+      padding: 22px 97px 62px 31px;
+      h2 {
+        font-weight: 400;
+        font-size: 24px;
+        color: #222;
+        font-family: $fontRegular;
+      }
+      ul {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      li {
+        font-weight: 400;
+        font-size: 22px;
+        color: #575757;
+        font-family: $fontRegular;
+      }
+      span {
+        color: #6f6e6e;
+        font-family: $fontRegular;
+      }
+      .card-price {
+        color: $colorPink;
+      }
+      .card-quantity {
+        border: 1px solid #eaeaea;
+        padding: 1px 17px 2px 12px;
+        margin-left: 24px;
+      }
+    }
+    .card-buttons {
+      width: 652px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 72px;
+      margin-bottom: 128px;
+      button {
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        font-family: $fontLight;
+        padding: 17px 41px 16px 39px;
+        background-color: #ffffff;
+        border: 1px solid #a4a4a4;
+        cursor: pointer;
+      }
+    }
+    .right-part {
+      .shipping-adress {
+        h2 {
+          font-weight: 400;
+          font-size: 16px;
+          color: #222;
+          font-family: $fontLight;
+        }
+        width: 360px;
+        margin-top: 113px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+          width: 360px;
+          height: 45px;
+          padding-left: 17px;
+          font-weight: 400;
+          font-size: 13px;
+          color: #222;
+          font-family: $fontLight;
+        }
+        #adress-1::placeholder {
+          color: #b1b1b1;
+        }
+        button {
+          font-weight: 300;
+          font-size: 11px;
+          color: #4a4a4a;
+          font-family: $fontLight;
+          cursor: pointer;
+          border: 1px solid #a4a4a4;
+          background-color: #ffffff;
+          padding: 10px 14px 12px 15px;
+        }
+      }
+      .order {
+        max-width: 360px;
+        height: 214px;
+        margin-top: 57px;
+        background-color: #f5f3f3;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        padding: 39px 42px 42px 44px;
+        &__price {
+          border-bottom: 1px solid #e2e2e2;
+          h5 {
+            font-weight: 400;
+            font-size: 11px;
+            color: #4a4a4a;
+            font-family: $fontRegular;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+          }
+          h3 {
+            font-weight: 300;
+            font-size: 16px;
+            color: #222;
+            margin-top: 12px;
+            margin-bottom: 21px;
+            font-family: $fontRegular;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            span {
+              font-weight: 700;
+              color: $colorPink;
+            }
+          }
+        }
+        button {
+          background-color: $colorPink;
+          border: none;
+          font-weight: 400;
+          font-size: 16px;
+          color: #fff;
+          font-family: $fontLight;
+          padding: 15px 15px;
+          cursor: pointer;
+        }
+      }
+    }
   }
   &__section-three {
     height: 448px;
